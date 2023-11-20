@@ -23,8 +23,9 @@ public class GetCurrentWeatherData {
         String apiId="e536549daa1f8a9c4dec7d703a97262f";
         String latitude="40.7029134";
         String longitude="-73.8006429";
+        String unit= "metric";
 
-       Response response=given().queryParam("lat",latitude).queryParam("lon",longitude).queryParam("appid",apiId).get(resource);
+       Response response=given().queryParam("lat",latitude).queryParam("lon",longitude).queryParam("appid",apiId).queryParam("unit",unit).get(resource);
         System.out.println(response.prettyPrint());
     }
 

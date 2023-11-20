@@ -22,8 +22,9 @@ public class Get5Day3hourForecast {
         String latitude= "41.8460595";
         String longitude ="-94.3081492";
         String apiKey= "e536549daa1f8a9c4dec7d703a97262f";
+        String unit= "metric";
 
-        Response response=given().queryParam("lat",latitude).queryParam("lon",longitude).queryParam("appid",apiKey).get(resource);
+        Response response=given().queryParam("lat",latitude).queryParam("lon",longitude).queryParam("appid",apiKey).queryParam("unit",unit).get(resource);
         System.out.println(response.prettyPrint());
     }
 }
