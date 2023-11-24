@@ -18,5 +18,10 @@ public class StringManipulation1 {
         Assert.assertEquals(str.charAt(8),'a');
     }
 
+    public static void main(String[] args) {
+        System.out.println(System.getProperty("user.dir")+"/src/test/java/resources/");
+        System.out.println("/Users/atifahussain/Desktop/QA_folder/MavenProject/src/test/java/resources/SubmitToll");
+    }
+
 
 }
